@@ -44,8 +44,32 @@ if __name__ == '__main__':
     # Utilizar add_subplot para lograr este efecto
     # de "2 filas" "2 columna" de gráficos
 
+    fig = plt.figure()
+    fig.suptitle('Ejercicio 4 de practica')
+    ax1 = fig.add_subplot(2, 2, 1)
+    ax2 = fig.add_subplot(2, 2, 2)
+    ax3 = fig.add_subplot(2, 2, 3)
+    ax4 = fig.add_subplot(2, 2, 4)
+
     # Se debe colocar en la leyenda la función que representa
     # cada gráfico
+
+    ax1.plot (x, y1, color = 'c', market = '.', label = 'x**2')
+    ax1.legend()
+    ax1.grid()
+
+    ax2.plot (x, y2, color = 'm', market = '-', label = 'x**3')
+    ax2.legend()
+    ax2.grid()
+
+    ax3.plot (x, y3, color = 'y', market = '--', label = 'x**4')
+    ax3.legend()
+    ax3.grid()
+
+    ax4.plot (x, y4, color = 'k', market = ':', label = 'np.sqrt(x)')
+    ax4.legend()
+    ax4.grid()
+    plt.show()
 
     # Cada gráfico realizarlo con un color distinto
     # a su elección

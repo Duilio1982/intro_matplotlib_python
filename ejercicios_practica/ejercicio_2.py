@@ -35,6 +35,15 @@ if __name__ == '__main__':
     for i in x:
         y2.append(i**3)
 
+    fig = plt.figure()
+    fig.suptitle('Ejercicio 2 de practica')
+    ax = fig.add_subplot()
+
+    ax.plot(x, y1, c='darkred', label='funcion x^2')
+    ax.plot(x, y2, c='darkblue', label='funcion x^3')
+    ax.legend()
+    ax.grid()
+
     # Alumno: Realizar un gráfico que representen las dos funciones
     # Para ello se debe llamar dos veces a "plot" con el mismo "ax"
 
@@ -45,5 +54,6 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    plt.show()
 
     print("terminamos")

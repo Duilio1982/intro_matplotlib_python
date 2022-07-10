@@ -28,6 +28,15 @@ if __name__ == '__main__':
     # Alumno: Graficar la función utilizando "scatter"
     # utilizando "x" e "y" ya disponible
 
+    fig = plt.figure()
+    fig.suptitle ('Ejercicio 3 de practica')
+    ax = fig.add_subplot()
+
+    ax.scatter (x, y, c='navy', label='funcion tan(x)', marker='.')
+    ax.legend()
+    ax.grid()
+    plt.show()
+
     # Colocar la leyenda y el label con el nombre de la función
 
     # Elegir un marker a elección
